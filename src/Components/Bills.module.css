@@ -1,0 +1,118 @@
+.pageHeader {
+    margin-bottom: 25px;
+}
+
+.pageHeader h1 {
+    margin-bottom: 5px;
+}
+
+.pageHeader p {
+    color: #777;
+    margin: 0;
+}
+
+.formCard {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 600px;
+}
+
+.formCard label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formCard select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.billCard {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.billHeader {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.billHeader h2 {
+    margin: 0;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+.billRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.billTotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #333;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.printArea {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.printButton {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.printButton:hover {
+    background-color: #1d4ed8;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .billCard,
+    .billCard * {
+        visibility: visible;
+    }
+    .billCard {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        box-shadow: none;
+        border: none;
+    }
+    .printArea {
+        display: none;
+    }
+}

@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    min-height: 100vh;
+}
+
+.appContainer {
+    display: flex;
+}
+
+/* Main Content Area */
+.mainContent {
+    margin-left: 240px;
+    padding: 30px;
+    padding-top: 80px;
+    transition: margin-left 0.3s ease-in-out;
+    width: 100%;
+}
+
+.mainContent.expanded {
+    margin-left: 0;
+}
+
+@media (max-width: 600px) {
+    .mainContent {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,29 @@
+.topHeader {
+    display: flex;
+    align-items: center;
+    background-color: #172033;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 900;
+}
+
+.topLogo h2 {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.toggleBtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

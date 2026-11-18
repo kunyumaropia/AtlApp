@@ -1,0 +1,93 @@
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.pageHeader h1 {
+    margin-bottom: 5px;
+}
+
+.pageHeader p {
+    color: #777;
+    margin: 0;
+}
+
+.dashboardCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #666;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.card span {
+    color: #888;
+    font-size: 12px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.clickable:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+}
+
+.detailsBox {
+    background: white;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th,
+.table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.table th {
+    background-color: #f7f8fa;
+    color: #555;
+}
+
+@media (max-width: 900px) {
+    .dashboardCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboardCards {
+        grid-template-columns: 1fr;
+    }
+}
